@@ -37,3 +37,21 @@ body {
 .titel{
     color: white
 }
+
+@media only screen and (max-width: 450px) {
+
+    body {
+        margin: 10px;
+        margin-left: 20px;
+        margin-right: 20px;   
+        background:  linear-gradient(  #09caff, #008fe7);  
+    }
+
+   .tekst {
+       padding: 10;
+   }
+
+}
+
+
+
