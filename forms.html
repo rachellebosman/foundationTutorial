@@ -1,0 +1,102 @@
+<!doctype html>
+
+  <html class="no-js" lang="en" dir="ltr">
+
+    <head>
+
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Foundation Test Project</title>
+      <link rel="stylesheet" href="css/foundation.css">
+      <link rel="stylesheet" href="css/app.css">
+      <style> 
+    body {background-color: #f7f7f7}
+      h3 {
+          text-align: center;
+          padding: 20px;
+      }
+      
+       .form {
+          background-color: white;
+          border: solid grey 1px;
+          border-radius: 5px;
+          padding: 20px;
+      }</style>
+
+    </head>
+
+    <body>
+
+     <h3> FORMULIEREN IN FOUNDATION </h3>
+
+     <form>
+            <div class="grid-container form">
+
+              <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                  <label>Voornaam:
+                    <input type="text" placeholder="">
+                  </label>
+                </div>
+                <div class="medium-6 cell">
+                  <label>Achternaam:
+                    <input type="text" placeholder="">
+                </label>
+                </div>
+              </div>
+            
+
+            <div class="grid-x grid-padding-x">
+                    <div class="medium-6 cell">
+            <label>Geslacht:
+                    <select>
+                      <option value="husker">Man</option>
+                      <option value="starbuck">Vrouw</option>
+                      <option value="hotdog">n.v.t</option>
+                    </select>
+            </label>
+            </div>
+            <div class="medium-6 cell">
+                    <label>E-mail:
+                      <input type="text" placeholder="">
+                  </label>
+                  </div>
+            </div>
+
+            <label>
+                Vertel ons wat leuke informatie?
+                <textarea placeholder=""></textarea>
+            </label>
+
+
+            <p id="ageHelpText">Wat vind u van dit formulier?</p>
+            <label id="ageLabel">slecht -> goed </label>
+
+                <div class="slider" aria-labelledby="ageLabel" aria-describedby="ageHelpText" data-slider data-initial-start="50" data-end="200">
+                <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+                <span class="slider-fill" data-slider-fill></span>
+                <input type="hidden">
+                </div>
+
+                <label  class="button">Verstuur formulier!</label>
+
+
+            </div>
+
+            
+            
+
+
+          </form>
+
+
+
+      <script src="js/vendor/jquery.js"></script>
+      <script src="js/vendor/what-input.js"></script>
+      <script src="js/vendor/foundation.js"></script>
+      <script src="js/app.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,39 @@
+body {
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;   
+    background:  linear-gradient(  #09caff, #008fe7);  
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    margin-bottom:8px;
+}
+
+.voorbeeld {
+    text-align: center;
+}
+
+.verstuur{
+    margin-top: 24px;   
+}
+
+.formulier {
+    border: solid 1px darkgrey;
+    padding: 20px;
+}
+
+.voorbeeldgrid {
+    text-align: center;
+}
+
+.tekst{
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.titel{
+    color: white
+}

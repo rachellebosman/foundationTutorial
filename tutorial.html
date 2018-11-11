@@ -1,0 +1,260 @@
+<!doctype html>
+
+  <html class="no-js" lang="en" dir="ltr">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Foundation Tutorial</title>
+      <link rel="stylesheet" href="css/foundation.css">
+      <link rel="stylesheet" href="css/app.css">
+      <link rel="stylesheet" href="css/tutorial.css">      
+    </head>
+
+    <body>
+
+        <h1 class="titel"> <img class="icon" src="img/copywriting.svg"> Tutorial </h1>
+        <div class="tekst">
+        
+        <p> Dit is een tutorial waarbij de basis elementen van het framework worden uitgelegt
+        zodat je snel aan de slag kunt met het maken van je eigen website. Deze website is zelf ook
+        helemaal gemaakt met behulp van het framework, alles wat je op deze pagina ziet is puur het framework zelf. 
+        </p>
+
+        <p> Als eerste moet je natuurlijk het framework downloaden als je dit nog niet hebt gedaan. 
+        Daarna moet je de gedownloade bestanden in je eigen project zetten. Tussen deze bestanden bevindt 
+        zich een index.html betandje. Hierin kan je alle code verwijderen tussen de <code> &lt;body&gt;  &lt;/body&gt;</code> 
+        zodat je een lege web pagina hebt. Om te testen of de webpagina werkt typt de volgende
+        code tussen de body tags: <code> &lt;h1&gt; Hello World &lt;/h1&gt;</code>. Als je deze tekst op je web browser 
+        hebt staan werkt de webpagina en kunnen we verder met de tutorial.
+        </p>
+
+        <h3> Tekst </h3>
+        
+        <p> Wat je misschien al gelijk opvalt is dat het framework al een mooi lettertype heeft, je hoeft je dus geen zorgen te maken over wat 
+        voor lettertype je wilt gaan gebruiken als je snel een website wilt maken.  De tekst die je nu leest zit tussen de  <code> &lt;p&gt;  &lt;/p&gt;</code> tags. 
+        Hieronder zie je een overzicht van hoe de verschillende groottes van de H's er uit komen te zien:
+        </p>  
+
+        <div class="voorbeeld">
+            <h1>h1 Hello World</h1>
+            <h2>h2 Hello World</h2>
+            <h3>h3 Hello World</h3>
+            <h4>h4 Hello World</h4>
+            <h5>h5 Hello World</h5>
+            <h6>h6 Hello World</h6>
+        </div>
+
+        <h3> Links </h3>
+        
+        <p> Het is heel makkelijk om een menu met links te maken, Foundation geeft hiervoor verschillende opties.
+        Dit is het standaard menu:
+        </p>
+
+        <ul class="menu">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+
+       <img src="img/menu.png"> 
+
+       <p> In de code zie je dat de <code> &lt;ul&gt; class="menu"&gt;</code> er voor zorgt dat het menu gelijk een opmaak krijgt waarbij de
+       links naast elkaar worden geplaatst. Wil je dingen anders aan het menu hoef je simpel weg alleen de class te veranderen. 
+       Als je de links onder elkaar wilt dan moet je de class veranderen naar <code> &lt;ul&gt; class="vertical menu"&gt;</code>.
+       Ook heb je de mogelijkheid om de positie van het menu te veranderen dit kan met behulp van de <code>align</code> class. Dus wil je 
+       het menu bijvoorbeeld in het midden dan typ de de volgende code: <code> &lt;ul&gt; class="align-center menu"&gt;</code>. 
+       Wil je het menu aan de rechter kan gebruik dan <code> align-right</code>.
+       </p>
+       
+       <h3> Forums </h3>
+
+       <p> Het is altijd handig om een formulier op je webpagina te hebben. Als voorbeeld gaan we een simpel
+       prijsvraag formulier maken waarbij de gebruiker z'n naam, antwoord, uitleg en email moet doorgeven. 
+       </p>
+
+       <div class="grid-x grid-padding-x formulier">
+            <div class="large-6 cell">
+                <label>Naam:
+                    <input type="text">
+                </label>
+            </div>
+
+            <div class="large-6 cell">
+                <label> Selecteer het goede antwoord: 
+                    <select>
+                    <option value="optie1">optie1</option>
+                    <option value="optie2">optie2</option>
+                    <option value="hotdog">optie3</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="large-12 cell">
+                <label>
+                    Hoe bent u op dit antwoord gekomen:
+                        <textarea placeholder="Vul hier uw antwoord in"></textarea>
+                </label>
+            </div>
+
+            <div class="large-10 cell">
+                    <label>
+                        E-mail:
+                        <input type="email" placeholder=""></textarea>
+                    </label>
+            </div>
+            <div class="large-2 cell verstuur">  <input type="submit" class="button" value="Verstuur"> </div>
+        </div>
+
+        <br>
+        
+        <p> Het maken van een formulier in Foundation is heel makkelijk, je heb eigenlijk geen extra code ervoor nodig. Het framework zorgt er in één keer voor 
+        dat de opmaak van het formulier er goed uitziet. 
+        In het voorbeeld is wel gebruik gemaakt van het grid systeem waardoor de elementen netjes naast elkaar komen, hier komen we later op terug in de tutorial.
+        Hieronder de code van het bovenstaande voorbeeld zodat je kan zien hoe gemakkelijk het eigenlijk is: 
+        </p>
+
+        <img src="img/formulierCode.png"> 
+
+        <p> Voor het grootte tekst vlak voor het antwoord is net een ander stukje code gebruikt. Tussen  <code> &lt;label&gt; &lt;/label&gt;</code> is de volgende
+        code getypt  <code> &lt;textarea&gt; class="vul hier uw antwoord in" &lt;/textarea&gt;</code>.
+        </p> 
+
+        <h3> Buttons</h3>
+        
+        <p> In het voorbeeld van het formulier zag je ook een blauwe button zitten, Foundation heeft veel keuze uit verschillende buttons. 
+        Je hebt 2 verschillende manieren om een button te gebruiken namelijk met <code> &lt;a&gt;</code>. Deze gebruik je voor links
+        naar andere pagina's. De basis code voor een link ziet er zo uit: <code> &lt;a href="#" class="button> naam link &lt;/a&gt;</code>. 
+        De andere button is <code> &lt;button&gt;</code>. Deze wordt gebruikt wanneer er op de pagina iets wordt veranderd in combinatie met
+        javascript (dus bij acties). Hiervoor ziet de code er zo uit: <code> &lt;button type="button" class="button"&gt; naam button &lt;button/&gt;</code>.
+        </p>
+
+        <p> Voor de buttons heb veel verschillende maten en kleuren, deze kan je bepalen door de button de juiste <code> class</code> mee
+        te geven. Hieronder zie je de basis buttons met de kleuren (de eerste rij buttons), de code voor de eerste button is als volgt:
+        <code> &lt;a class="button primary" href="#"&gt; "primary" &lt;button/&gt;</code> Door de class te veranderen van "primary" naar 
+        een van de onderstaande (zie buttons) verander je de button naar de button in die kleur. De onderste rij buttons zijn "hollow", deze kan 
+        je simpel weg gebruiken door hollow aan de class toe te voegen. Wil je dus bijvoorbeeld de eerste button uit de onderste rij dan
+        maak je gebruik van de volgende code: <code> &lt;a class="hollow button secondary" href="#"&gt; "hollow secondary" &lt;button/&gt;</code>.
+        </p>
+        
+        <a class="button primary" href="#"> "primary" </a>
+        <a class="button secondary" href="#"> "secondary" </a>
+        <a class="button success" href="#"> "success" </a>
+        <a class="button alert" href="#"> "alert" </a>
+        <a class="button warning" href="#"> "warning" </a> 
+        
+        <br>
+
+        <button class="hollow button secondary" href="#">"hollow secondary"</button>
+        <button class="hollow button success" href="#">"hollow success"</button>
+        <button class="hollow button alert" href="#">"hollow alert"</button>
+        <button class="hollow button warning" href="#">"hollow warning"</button>
+
+        <p> Ook is het mogelijk om de grootte van de buttons te bepalen door een van de volgende tags in de <code> class</code> te gebruiken: </p>
+
+        <a class="button tiny" href="#"> "button tiny" </a>
+        <a class="button small" href="#"> "button small" </a>
+        <a class="button" href="#"> "button" </a>
+        <a class="button large" href="#"> "button large"</a>    
+
+        <h3> Responsive design</h3>
+        
+        <p>Wanneer je het scherm van de pagina kleiner maakt zie je dat alle elementen mee bewegen en dat alles er nog
+        steeds netjes en leesbaar uit ziet. Dit komt door het grid-systeem waarmee Foundation werkt. We gaan dit uitleggen met
+        behulp van een voorbeeld. Stel je wilt net als op de home page 
+        3 afbeeldingen naast elkaar hebben met wat tekst en wanneer het scherm kleiner wordt deze netjes onder elkaar komen (zie onderstaande afbeeldingen,
+        maak het scherm wat kleiner om het in actie te zien). Om dit te bereiken moeten we gebruik maken van het grid systeem. </p>
+
+
+        <div class="voorbeeldgrid grid container">
+            <div class="grid-x"> 
+
+                <div class="medium-4 cell"> 
+                    <img src="img/afbeelding1.png"> 
+                    <h4> Titel </h4>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p> 
+                </div>
+
+                <div class="medium-4 cell"> 
+                    <img src="img/afbeelding1.png">
+                    <h4> Titel </h4>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p> 
+                </div>
+
+                <div class="medium-4 cell"> 
+                    <img src="img/afbeelding1.png">
+                    <h4> Titel </h4>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p> 
+                </div>
+
+            </div>
+        </div>
+
+        <p> Om te beginnen moeten we in de code noteren dat we gebruik gaan maken van het gridsysteem Dit doen we door een div aan te maken met een class <br>
+        <code> &lt;div class="grid container"> &lt;/div></code> hiertussen komen de rijen.
+        Het grid systeem bestaat dus uit rijen, deze geven wij de volgende class <code> &lt;div class="grid-x"> &lt;/div></code>. 
+        Dus alles wat tussen deze code wordt geplaatst komt in dezelfde rij terecht. Elke rij bestaat uit 12 vakken, dus zoals in
+        het voorbeeld bij 3 afbeeldingen, bestaat elk stukje uit 4 vakken (dit weten we door de volgende simpele rekensom: 12/3=4).
+        De code voor elk stukje (cell) is hieronder te zien. In de class geven we de grootte aan van het, in dit geval: <code> medium</code> &
+        uit hoeveel vlakken het moet bestaan (4).
+        </p>
+
+        <img src="img/codeGrid.png">
+
+        <p> Wat er in het bovenstaande voorbeeld gebeurd is wanneer je het scherm klein maakt dat de elementen onder elkaar komen. Maar
+        wat nou als je bijvoorbeeld een rij hebt van 4 elementen en op een klein scherm wil je er 2 naast elkaar. Bij het onderstaande
+        voorbeeld als je het scherm kleiner maakt zie je dat er 2 elementen naast elkaar komen ipv alle elementen onder elkaar (probeer maar uit).
+        </p>
+
+        <div class="voorbeeldgrid grid container">
+                <div class="grid-x"> 
+    
+                    <div class="small-6 medium-3 cell"> 
+                        <img src="img/afbeelding1.png"> 
+                        <h4> Titel </h4>
+                        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p> 
+                    </div>
+    
+                    <div class="small-6 medium-3 cell"> 
+                        <img src="img/afbeelding1.png">
+                        <h4> Titel </h4>
+                        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p> 
+                    </div>
+
+                    <div class="small-6 medium-3 cell"> 
+                            <img src="img/afbeelding1.png"> 
+                            <h4> Titel </h4>
+                            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p> 
+                    </div>
+        
+                        <div class="small-6 medium-3 cell"> 
+                            <img src="img/afbeelding1.png">
+                            <h4> Titel </h4>
+                            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p> 
+                        </div>
+                </div>
+            </div>
+
+        <p> Om dit effect te krijgen in je responsive design moet er heel simpel een tweede class worden toegevoegd, zie onderstaande foto:</p>
+        
+        <img src="img/codeGrid2.png"> 
+        
+        <p> In deze code zeggen we eigenlijk bij een gemiddeld groot beeldscherm (medium) zijn de elementen 3 vakken groot,
+        we willen er 4 naast elkaar dus 12/4=3. Maar bij een klein scherm (small) willen we er 2 naast elkaar (12/2=6).
+        </p>
+
+        <p> Dit waren de basis elementen van het framework die je moet weten om zelf aan de slag te kunnen gaan met het maken van je eigen website! Uiteraard biedt het 
+        framework nog vele andere mogelijkheden. Deze zijn allemaal te vinden op de <a href="https://foundation.zurb.com/learn/tutorials.html">officiële documentatie</a> van het framework
+        </p>
+
+        <a href="index.html"> < terug naar het hoofdscherm.</a>
+
+    </div>
+
+</body>
+
+  
+
+</html>
